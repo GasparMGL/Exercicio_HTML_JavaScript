@@ -1,44 +1,26 @@
 const form = document.getElementById('form-login');
-const user = document.getElementById('id-login');
-const password = document.getElementById('senha-login');
-
-function validarUsuario(usuario){
-    return usuario.length === 4;
-}
-
-function validarSenha(senha){
-    return senha.length >= 6;
-}
-
-user.addEventListener('keyup', function(e){
-    const usuarioValido = validarUsuario(e.target.value);
-
-    if(!usuarioValido){
-        document.querySelector('.id-error').style.display = 'block';
-    } else {
-        document.querySelector('.id-error').style.display = 'none';
-    }
-});
-
-password.addEventListener('keyup', function(e){
-    const senhaValida = validarSenha(e.target.value);
-
-    if(!senhaValida){
-        document.querySelector('.senha-error').style.display = 'block';
-    } else {
-        document.querySelector('.senha-error').style.display = 'none';
-    }
-});
+const refCampoA = document.getElementById('campoA');
+const refCampoB= document.getElementById('campoB');
 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    const usuarioValido = validarUsuario(user.value);
-    const senhaValida = validarSenha(password.value);
+    const valorA = refCampoA.value;
+    const valorB = refCampoB.value;
 
-    if (usuarioValido && senhaValida) {
-        alert("Tudo certo");
+    const avisoConfirmacao = `Tudo certo`;
+    const avisoNegacao = `Corrija! O Campo B ${valorB} esta menor que o Campo A ${valorA}`;
+
+
+    if (valorA <= valorB) {
+        const containerAvisoConfirmacao = document.querySelector('.confirmacao');
+        containerAvisoConfirmacao.innerHTML = avisoConfirmacao;
+        document.querySelector('.confirmacao').style.display = 'block';
+        document.querySelector('.negacao').style.display = 'none';
     } else {
-        alert("Algo esta errado, verifique!");
+        const containerAvisoNegacao = document.querySelector('.negacao');
+        containerAvisoNegacao.innerHTML = avisoNegacao;
+        document.querySelector('.confirmacao').style.display = 'none';
+        document.querySelector('.negacao').style.display = 'block';
     }
 });

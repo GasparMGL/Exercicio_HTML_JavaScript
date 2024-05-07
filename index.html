@@ -13,15 +13,17 @@
         </header>
 
         <form id="form-login">
-            <p>Digite a baixo o ID de 4 numeros <br> e uma senha de no minimo 6 numeros</p>
+            <p>O campo A tem que ser menor que o campo B</p>
             <div>
-                <input id="id-login" type="number" placeholder="ID do Cliente de 4 digitos" required>
-                <p class="id-error">O ID nao esta conforme</p>
+                <p>Campo A</p>
+                <input id="campoA" type="number" placeholder="Apenas numeros" required>
             </div>
             <div>
-                <input id="senha-login" type="number" placeholder="senha com no minimo 6 digitos" required>
-                <p class="senha-error">A senha nao atingiu os requisitos necessarios</p>
+                <p>Campo B</p>
+                <input id="campoB" type="number" placeholder="apenas numeros" required>
             </div>
+            <p class="confirmacao">t</p>
+            <p class="negacao">t</p>
             <div>
                 <button id="btn-login" type="submit">Confirmar</button>
             </div>

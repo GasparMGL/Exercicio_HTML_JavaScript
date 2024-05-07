@@ -35,12 +35,12 @@ input {
     width: 300px;
 }
 
-.id-error {
+.confirmacao {
     display: none;
-    color: red;
+    color: green;
 }
 
-.senha-error {
-    display: none;
+.negacao {
     color: red;
+    display: none;
 }
