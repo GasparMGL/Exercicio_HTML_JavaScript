@@ -39,6 +39,6 @@ form.addEventListener('submit', function(e) {
     if (usuarioValido && senhaValida) {
         alert("Tudo certo");
     } else {
-        alert("Algo errado");
+        alert("Algo esta errado, verifique!");
     }
 });
