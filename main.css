@@ -5,22 +5,29 @@
     box-sizing: border-box;
 }
 
-header, 
-form{
-    display:block;
+body {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content:center;
-    padding-left: 300px;
-    padding-top: 12px;
 }
 
+
+form {
+    width: 400px; 
+    padding: 30px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    background-color: #f9f9f9; 
+}
 header {
+    margin-top: 100px;
     margin-bottom: 8px;
+    margin-left: 80px;
 }
 
 form p {
     margin-top: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 input {
@@ -30,8 +37,10 @@ input {
 
 .id-error {
     display: none;
+    color: red;
 }
 
 .senha-error {
     display: none;
+    color: red;
 }
