@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h1>Exercicio EBAC</h1>
+    </header>
+    <form id="form-login">
+        <p>Digite a baixo o ID de 4 digitos <br> e uma senha de no minimo 6 digitos</p>
+        <div>
+            <input id="id-login" type="number" placeholder="ID do Cliente de 4 digitos" required>
+            <p class="id-error">O ID nao esta conforme</p>
+        </div>
+        <div>
+            <input id="senha-login" type="number" placeholder="senha com no minimo 6 digitos" required>
+            <p class="senha-error">A senha nao atingiu os requisitos necessarios</p>
+        </div>
+        <div>
+            <button id="btn-login" type="submit">Confirmar</button>
+        </div>
+
+    </form>
+
+    <script src="./main.js"></script>
+
+</body>
+</html>
