@@ -11,7 +11,6 @@ form.addEventListener('submit', function(e) {
     const avisoConfirmacao = `Tudo certo`;
     const avisoNegacao = `Corrija! O Campo B ${valorB} esta menor que o Campo A ${valorA}`;
 
-
     if (valorA <= valorB) {
         const containerAvisoConfirmacao = document.querySelector('.confirmacao');
         containerAvisoConfirmacao.innerHTML = avisoConfirmacao;
