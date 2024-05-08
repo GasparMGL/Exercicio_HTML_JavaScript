@@ -1,12 +1,12 @@
 const form = document.getElementById('form-login');
-const refCampoA = document.getElementById('campoA');
-const refCampoB= document.getElementById('campoB');
+const refCampoA = document.getElementById(parseFloat('campoA').value);
+const refCampoB = document.getElementById(parseFloat('campoB').value);
 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    const valorA = refCampoA.value;
-    const valorB = refCampoB.value;
+    const valorA = refCampoA;
+    const valorB = refCampoB;
 
     const avisoConfirmacao = `Tudo certo`;
     const avisoNegacao = `Corrija! O Campo B ${valorB} esta menor que o Campo A ${valorA}`;
