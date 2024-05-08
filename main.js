@@ -1,6 +1,6 @@
 const form = document.getElementById('form-login');
-const refCampoA = document.getElementById(parseFloat('campoA').value);
-const refCampoB = document.getElementById(parseFloat('campoB').value);
+const refCampoA = document.getElementById(ParseFloat('campoA').value);
+const refCampoB = document.getElementById(ParseFloat('campoB').value);
 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
